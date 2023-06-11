@@ -1,0 +1,102 @@
+.AdvancedSearch {
+    min-height: calc(100vh - 200px);
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+
+    .title {
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+        gap: 10px;
+
+        h2 {
+            font-weight: 400;
+            font-size: 30px;
+            color: #3e6d91;
+            margin-bottom: 20px;
+        }
+
+        a {
+            font-size: 16px;
+            text-decoration: none;
+            color: #3e6d91;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            height: 20px;
+
+            &:hover {
+                color: #3e6d91;
+
+                p {
+                    display: flex;
+                    transition: display .3s linear;
+                }
+            }
+
+            p {
+                display: none;
+            }
+
+            svg {
+                border: 1px solid #3e6d91;
+                border-radius: 50%;
+                stroke: #3e6d91;
+            }
+        }
+    }
+
+    .containerMain {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        // max-width: 800px;
+
+        .option {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+
+            input {
+                height: 40px !important;
+                border-radius: 0px;
+            }
+
+            .p-inputtext:enabled:focus,
+            .p-inputtext:enabled:hover {
+                border-color: #3e6d91 !important;
+            }
+
+            label {
+                height: 16px;
+                font-size: 14px;
+            }
+        }
+
+        .info {
+            display: grid;
+            grid-template-columns: 59% 35%;
+            gap: 50px;
+        }
+
+        .info2 {
+            display: flex;
+            gap: 50px;
+            width: 100%;
+
+            .option {
+                width: 100%;
+            }
+        }
+        .cButton{
+            width: 100%;
+            display: flex;
+            justify-content: end;
+        }
+    }
+
+}

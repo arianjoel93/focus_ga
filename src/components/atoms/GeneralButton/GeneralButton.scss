@@ -1,0 +1,40 @@
+.Button {
+    @media (max-width: 1280px) {
+        max-width: 300px;
+        width: 100%;
+    }
+
+    @media (max-width: 540px) {
+        max-width: 100%;
+    }
+
+    width: 300px;
+    height: 40px;
+    background: #3e6d91;
+    border: none;
+    color: white;
+    text-transform: uppercase;
+    margin-top: 24px;
+    font-weight: 700;
+    text-decoration: none;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+
+    body.dark & {
+        background: transparent;
+        border: 1px solid #3e6d91;
+    }
+
+    &:hover {
+        color: #3e6d91;
+        background: transparent;
+        border: 1px solid #3e6d91;
+
+        body.dark & {
+            color: white;
+            letter-spacing: 1.5px;
+            transition: letter-spacing .3s linear;
+        }
+    }
+}

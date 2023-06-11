@@ -1,0 +1,74 @@
+.cardHome {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    .element {
+
+        width: 95%;
+        height: 70px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        // border-radius: 5px;
+        background-color: #1e3f5e;
+        color: white;
+        display: grid;
+        place-items: center;
+        cursor: pointer;
+        position: relative;
+        z-index: 99;
+        transform: scale(1);
+        border: none;
+
+        body.dark & {
+            background-color: #222e35;
+            border: 1px solid #3e6d91;
+        }
+
+        &:hover {
+            overflow: hidden;
+            border: 1px solid #3e6d91;
+            background-color: transparent;
+            color: #3e6d91;
+            // border: none !important;
+
+            // img {
+            //     display: flex;
+            //     transition: display .2s linear;
+            //     object-fit: cover;
+            //     object-position: bottom;
+
+            // }
+        }
+
+
+        p {
+            @media (max-width: 1280px) {
+                font-size: 16px;
+            }
+
+            margin: 0;
+            font-size: 16px;
+            font-weight: 700;
+            text-transform: uppercase;
+            z-index: 99;
+            position: relative;
+        }
+
+        img {
+            @media (max-width: 1280px) {
+                height: 170px;
+            }
+
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 200px;
+            z-index: 9;
+            opacity: 0.7;
+            display: none;
+        }
+    }
+}
